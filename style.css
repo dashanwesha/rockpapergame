@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0; 
+    text-align: center;
+    background-color: brown;
+    font-family: 'Roboto', sans-serif;
+ }
+ h1{
+     background-color: rgb(5, 5, 43);
+     color:whitesmoke;
+     height:5rem;
+     line-height: 5rem;
+ }
+ .choice{
+     height: 165px;
+     width:165px;
+     display:flex;
+     justify-content: center;
+     align-items: center;
+ }
+ .choice:hover{
+     opacity:0.5;
+     cursor: pointer;
+     background-color: black;
+     transform: scale(1.1);
+    transition: transform 0.3s ease;
+ }
+ img{
+   height: 150px;
+   width: 150px;
+   object-fit:cover;
+   border-radius: 50%;
+ }
+ .choices{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 3rem;
+     margin-top: 5rem;
+ }
+ .score-board{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 2rem;
+     margin-top: 3rem;
+     gap: 5rem;
+ }
+ #user-score,#comp-score{
+    font-size: 4rem; 
+ }
+ .msg-container{
+     
+     display:flex; 
+     justify-content:center; 
+     align-items:center;
+     margin-bottom: 600px; 
+     margin-top: 5rem;
+     
+ }
+ #msg{
+    
+    background-color: black; 
+    color: azure;
+    font-size: 2rem;
+    display: inline;
+    padding: 1rem;
+    border-radius: 1rem;
+    justify-content:center; 
+    align-items:center; 
+    text-align: left;
+    animation: fadeIn 0.5s ease-in-out;
+    background: linear-gradient(to right, #000000, #333333);
+    
+ }
+ @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@media only screen and (max-width: 768px) {
+    
+    .choice {
+        height: 100px;
+        width: 100px;
+    }
+
+    img {
+        height: 90px;
+        width: 90px;
+    }
+
+    .choices {
+        flex-direction: column; 
+        gap: 2rem; 
+        margin-top: 3rem; 
+    }
+
+    .score-board {
+        font-size: 1.5rem; 
+        gap: 3rem; 
+        margin-top: 2rem; 
+    }
+}
